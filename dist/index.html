@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Diachenko</title>
+      <link href="css/main.css" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="navigation">
+            <div class="navigation__up">
+               <div class="avatar">			
+                  <span class="circle_red">2</span>
+               </div>
+               <div class="icons icons__up">
+                  <i class="fas fa-ellipsis-h  ellipsis-one"></i>
+                  <a href="#" class="icons__up-board icon active">
+                     <i class="fas fa-tachometer-alt fa-2x"></i>
+                     <p>Board</p>
+                  </a>
+                  <i class="fas fa-ellipsis-h ellipsis-two"></i>
+                  <a href="#" class="icons__up-projects icon">
+                     <i class="fas fa-bars fa-2x"></i>
+                     <span class="circle_gray">9</span>
+                     <p>Projects</p>
+                  </a>
+                  <i class="fas fa-ellipsis-h ellipsis-three"></i>
+                  <a href="#" class="icons__up-settings icon">
+                     <i class="fas fa-cog fa-2x"></i> 
+                     <p>Settings</p>
+                  </a>
+               </div>
+            </div>
+            <div class="navigation__down">
+               <div class="icons icons__down">
+                  <a href="#" class="icons__down-upgrade icon">
+                     <i class="fas fa-atom fa-2x"></i>
+                     <span class="circle_red">3</span>
+                     <p>Upgrade</p>
+                  </a>
+                  <i class="fas fa-ellipsis-h ellipsis-four"></i>
+                  <a href="#" class="icons__down-logaut icon">
+                     <i class="fas fa-power-off fa-2x"></i>
+                     <p>Logout</p>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <div class="content">
+            <div class="header">
+               <div class="header__dashboard">
+                  <div class="circle_big_red">
+                     <i class="fas fa-undo"></i>
+                  </div>
+                  <a href="#" class="button">Dashboard</a>
+               </div>
+               <div class="header__online">
+                  <div class="circle_big_green">
+                     <i class="fas fa-angle-down"></i>
+                  </div>
+                  <a href="#" class="button">
+                     <i class="far fa-comments"></i>
+                     <span>5 user online </span>
+                     <i class="fas fa-angle-down"></i>
+                  </a>
+               </div>
+            </div>
+            <div class="subhead">
+               <div class="subhead__actproj">
+                  <i class="far fa-clock fa-2x"></i> 
+                  <p>Active Projects</p>
+                  <span class="circle_gray">9</span>
+               </div>
+               <div class="subhead__tab">
+                  <div class="subhead__tab__messenger" onclick="dNone()">
+                     <i class="far fa-paper-plane fa-lg fa-flip-horizontal"></i>
+                     <p>Messenger</p>
+                     <span class="circle_red">2</span>
+                  </div>
+                  <div class="subhead__tab__etc">
+                     <form>
+                        <input type="text" name="search" placeholder="Search ...">
+                     </form>
+                  </div>
+               </div>
+            </div>
+            <div class="search" id="search">
+               <div class="projects">
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <form>
+                           <input type="text" name="search" placeholder="Search ...">
+                        </form>
+                     </div>
+                     <div class="projects__items-right">
+                        <a href="#" class="button">
+                           New Projects 
+                           <span>(descending)	</span>
+                           <i class="fas fa-angle-down"></i>
+                        </a>
+                        <div class="circle_big_red">	
+                           <i class="fas fa-plus"></i> 
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <div class="percent">23%</div>
+                        <p>Create Contact Formular</p>
+                     </div>
+                     <div class="projects__items-right">
+                        <a href="#" class="button">Worlda</a>
+                        <div class="circle_search">
+                           <i class="fas fa-search"></i> 
+                        </div>
+                        <div class="circle_down">
+                           <i class="fas fa-angle-down"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <div class="percent">87%</div>
+                        <p>Create Subpage PSD</p>
+                     </div>
+                     <div class="projects__items-right">
+                        <a href="#" class="button">Panorama</a>
+                        <div class="circle_search">
+                           <i class="fas fa-search"></i> 
+                        </div>
+                        <div class="circle_down">
+                           <i class="fas fa-angle-down"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="accordion">
+                  	<div class="accordion_item">
+	                  <div class="projects__items">
+	                     <div class="projects__items-left">
+	                        <div class="percent">83%</div>
+	                        <p>Layout & implementation in HTML & CSS</p>
+	                     </div>
+	                     <div class="projects__items-right">
+	                        <a href="#" class="button">Ebay Relaunch</a>
+	                        <div class="circle_search">
+	                           <i class="fas fa-search"></i> 
+	                        </div>
+	                        <div class="circle_down">
+	                           <i class="fas fa-angle-down"></i>
+	                        </div>
+	                      </div>
+	                  </div>
+
+	                  <div class="projects__items__in">	
+		                  <div class="today projects__items">
+		                  	<div class="today__left projects__items-left">
+		                  		<div class="percent_gray">66%</div>
+		                        <p>Creating the Context</p>
+		                  	</div>
+		                  	<div class="today__right projects__items-right">
+		                  		<div class="users__items__ava">
+		                  			<div class="online online-green"></div>
+		                  		</div>
+		                  		<div class="users__items__ava">
+		                  			<div class="online online-green"></div>
+		                  		</div>
+		                  		<div class="users__items__ava">
+		                  			<div class="online online-grey"></div>
+		                  		</div>
+		                  		<div class="circle_search number">+3</div>
+		                  		<div class="btn">
+		                  			<i class="fas fa-redo-alt"></i> 
+		                  			<span><b>Today, 13:40 PM</b></span>
+		                  		</div> 
+		                  		<div class="circle_search">
+		                           <i class="fas fa-search"></i> 
+		                  		</div>
+		                  	</div>
+		                  </div>
+		                  <div class="yesterday projects__items">
+		                  	<div class="yesterday__left projects__items-left">
+		                  		<div class="percent_gray">READY</div>
+		                        <p>Implementation in the Layout</p>
+		                        <i class="fas fa-chevron-down"></i>
+		                  	</div>
+		                  	<div class="yesterday__right projects__items-right">
+		                  		<div class="users__items__ava">
+		                  			<div class="online online-green"></div>
+		                  		</div>
+		                  		<div class="users__items__ava">
+		                  			<div class="online online-grey"></div>
+		                  		</div>
+		                  		<div class="btn">
+		                  			<i class="fas fa-redo-alt"></i> 
+		                  			<span>Today, 13:40 PM</span>
+		                  		</div> 
+		                  		<div class="circle_search">
+		                           <i class="fas fa-search"></i> 
+		                  		</div>
+		                  	</div>
+		                  </div>
+		                </div>  
+		               </div> 
+				  </div>
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <div class="percent">23%</div>
+                        <p>Lorem ipsum dolor sit amet, elitr, sed diam  nonumy eirmod temp</p>
+                     </div>
+                     <div class="projects__items-right">
+                        <a href="#" class="button">Panorama</a>
+                        <div class="circle_search">
+                           <i class="fas fa-search"></i> 
+                        </div>
+                        <div class="circle_down">
+                           <i class="fas fa-angle-down"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <div class="percent">98%</div>
+                        <p>Create Contact Formular</p>
+                     </div>
+                     <div class="projects__items-right">
+                        <a class="button">Worlda</a>
+                        <div class="circle_search">
+                           <i class="fas fa-search"></i> 
+                        </div>
+                        <div class="circle_down">
+                           <i class="fas fa-angle-down"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <div class="percent">98%</div>
+                        <p>Create Contact Formular</p>
+                     </div>
+                     <div class="projects__items-right">
+                        <a href="#" class="button">Worlda</a>
+                        <div class="circle_search">
+                           <i class="fas fa-search"></i> 
+                        </div>
+                        <div class="circle_down">
+                           <i class="fas fa-angle-down"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="projects__items">
+                     <div class="projects__items-left">
+                        <div class="percent">98%</div>
+                        <p>Create Contact Formular</p>
+                     </div>
+                     <div class="projects__items-right">
+                        <a href="#" class="button">Worlda</a>
+                        <div class="circle_search">
+                           <i class="fas fa-search"></i> 
+                        </div>
+                        <div class="circle_down">
+                           <i class="fas fa-angle-down"></i>
+                        </div>
+                     </div>
+                  </div>
+                  <a href="#" class="arhive">
+                     <p>Project Archive</p>
+                     <i class="fas fa-angle-right"></i>
+                  </a>
+               </div>
+               <div class="users">
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Mark P. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Marvin S. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-grey"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Mark P. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Mark P. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Philip O. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Mark P. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Benni I. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Benni I. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Mark P. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <div class="users__items">
+                     <div class="users__items__ava">
+                        <div class="online online-green"></div>
+                     </div>
+                     <div class="users__items__act">
+                        <p>Benni I. 
+                           <span class="add">add an Image into Worlda</span>
+                        </p>
+                        <time datetime="22:30">Today, 10:30 PM</time>
+                     </div>
+                  </div>
+                  <a href="#" class="arhive">
+                     <p>Activity Archive</p>
+                     <i class="fas fa-angle-right"></i>
+                  </a>
+               </div>
+            </div>
+      </div>
+  	</div>
+
+      <script src="js/jquery.min.js"></script>	
+      <script src="js/main.js"></script>
+   </body>
+</html>

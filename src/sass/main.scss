@@ -1,0 +1,35 @@
+@import "normalize";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "./node_modules/@fortawesome/fontawesome-free/scss/v4-shims.scss";
+
+$font-size: 18px;
+$grey: #4b4b4b;
+
+body {
+	font-family: Helvetica, sans-serif;
+  color: $grey;
+  font-size: $font-size;
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.container {
+  display: flex;
+  min-width: 1024px;
+  min-height: 600px;
+  margin: 0 auto;
+}
+
+@import "navigation.scss";
+@import "content.scss";
+
+
+
+

@@ -1,0 +1,155 @@
+$red: #ff503f;
+$white: #ffffff;
+
+@mixin circle {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    color: $white;
+}
+@mixin circle_gray {
+  background-color: #adadad;
+}
+@mixin circle_red {
+  background-color: $red;
+}
+
+.navigation {
+	color: #4d4f52;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 10%;
+  background-color: #242a2f;
+  line-height: 2.083;
+  text-align: center;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.35);
+
+	p {
+      margin-block-end: 0px;
+      margin-block-start: 0px;
+    }
+}
+
+.avatar {
+	width: 88px;
+	height: 88px;
+	border-radius: 50%;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #239ce8 url('../img/ava.png') no-repeat center;
+  background-size: 100px;
+
+    .circle_red {
+    	@include circle;
+    	@include circle_red;
+    	bottom: 10px;
+    	left: 62%;
+    }
+    .circle_red:hover {
+		transition: background-color 1000ms;
+		background-color: darken($red, 20%);
+	}
+}
+
+
+  .icon {
+    padding-top: 15px;
+  }
+  .icon:hover {
+  	color: $red;
+
+  	p {
+  		color: $white;
+  	}
+  }
+	p {
+		color: #787878;
+	}
+  .ellipsis-one,
+  .ellipsis-two,
+  .ellipsis-three,
+  .ellipsis-four{
+    display: block;
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .ellipsis-two {
+    padding-top: 30px;
+  }
+  .ellipsis-three {
+    padding-top: 20px;
+  }
+  .icons__up, 
+  .icons__down {
+    text-align: center;
+  }
+  .icons__up {
+    flex: 1 0 auto;
+
+    .active {
+      border-left: 3px solid $red;
+      padding-top: 10px;
+
+      p {
+        color: $white;
+      }
+      i {
+      	color: $red;
+      }
+    }
+    .fa-bars {
+      position: relative;
+    }
+    .circle_gray {
+      @include circle;
+      @include circle_gray;
+      bottom: 64px;
+      left: 58%;
+    }
+    .icons__up-projects p {
+      margin-top: -30px;
+    }   
+  }
+.icons__down {
+  	background-color: #242a2f;
+    flex: 0 0 auto;
+
+    .circle_red {
+      @include circle;
+      @include circle_red;
+      bottom: 55px;
+      left: 57%;
+    }
+    .icons__down-upgrade p {
+      margin-top: -30px;
+    }
+    .icons__down-logaut{
+    	padding-bottom: 45px;
+    }
+    .icons__down-logaut i {
+      color: $red;
+    }
+    .icons__down-logaut p {
+      color: $white;
+    }
+
+}
+.circle_gray:hover {
+	transition: background-color 1000ms;
+	background-color: darken(#adadad, 20%);
+}
+.circle_red:hover {
+	transition: background-color 1000ms;
+	background-color: darken($red, 20%);
+}
+
+
+
+

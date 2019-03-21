@@ -1,0 +1,1 @@
+function dNone(){document.getElementById("search").classList.toggle("dnone")}$(".accordion_item>.projects__items").click(function(){$(this).next(".projects__items__in").is(":visible")?$(this).next(".projects__items__in").slideUp():($(this).closest(".accordion").find(".projects__items__in").slideUp(),$(this).next(".projects__items__in").slideDown())});
